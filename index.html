@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarEase | Student Scholarship Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">ScholarEase</h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#scholarships">Scholarships</a></li>
+                <li><a href="#eligibility">Eligibility</a></li>
+                <li><a href="#apply">Apply Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="tagline">YOUR FUTURE, OUR PRIORITY</p>
+            <h1>Education Should Never Be a Financial Barrier</h1>
+            <p>
+                Discover scholarship opportunities that support
+                your education, dreams and future ambitions.
+            </p>
+            <a href="#scholarships" class="btn">Explore Scholarships</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>Welcome to ScholarEase</h2>
+        <p>
+            ScholarEase helps students explore scholarship opportunities
+            and understand the eligibility criteria and documents
+            required to apply for financial assistance.
+        </p>
+    </section>
+
+    <!-- Scholarship Section -->
+    <section id="scholarships" class="section scholarships">
+        <h2>Available Scholarships</h2>
+        <p class="section-intro">
+            Explore opportunities that can support your education.
+        </p>
+
+        <div class="scholarship-container">
+
+            <div class="scholarship-card">
+                <div class="card-icon">🎓</div>
+                <h3>Merit-Based Scholarship</h3>
+                <p>For students with strong academic performance.</p>
+                <p><strong>Eligibility:</strong> Academic merit</p>
+                <a href="#apply" class="card-btn">Apply Now</a>
+            </div>
+
+            <div class="scholarship-card">
+                <div class="card-icon">📚</div>
+                <h3>Need-Based Scholarship</h3>
+                <p>For students who require financial assistance.</p>
+                <p><strong>Eligibility:</strong> Family income criteria</p>
+                <a href="#apply" class="card-btn">Apply Now</a>
+            </div>
+
+            <div class="scholarship-card">
+                <div class="card-icon">🏆</div>
+                <h3>Higher Education Scholarship</h3>
+                <p>Support for students pursuing further studies.</p>
+                <p><strong>Eligibility:</strong> Course-specific criteria</p>
+                <a href="#apply" class="card-btn">Apply Now</a>
+            </div>
+
+        </div>
+        <p class="note">
+            Note: These are illustrative scholarship categories.
+            Actual eligibility depends on the scholarship provider.
+        </p>
+    </section>
+
+    <!-- Eligibility Section -->
+    <section id="eligibility" class="section eligibility">
+        <h2>Eligibility and Required Documents</h2>
+
+        <div class="eligibility-content">
+            <div>
+                <h3>Basic Eligibility</h3>
+                <ul>
+                    <li>Must be enrolled in an educational institution.</li>
+                    <li>Must meet the scholarship's academic criteria.</li>
+                    <li>Must satisfy applicable family income criteria.</li>
+                    <li>Must provide accurate application details.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Required Documents</h3>
+                <ul>
+                    <li>Student identity proof</li>
+                    <li>Previous academic marksheet</li>
+                    <li>Income certificate, if applicable</li>
+                    <li>Bonafide certificate, if required</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section id="apply" class="section apply-section">
+        <h2>Student Scholarship Application</h2>
+        <p class="section-intro">
+            Enter your details in the application form below.
+        </p>
+
+        <form class="application-form" action="#" method="get">
+
+            <label for="student-name">Full Name</label>
+            <input type="text" id="student-name"
+                   name="student_name" required
+                   placeholder="Enter your full name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email"
+                   name="email" required
+                   placeholder="Enter your email address">
+
+            <label for="course">Course of Study</label>
+            <select id="course" name="course" required>
+                <option value="">Select your course</option>
+                <option value="BE">B.E.</option>
+                <option value="BTech">B.Tech.</option>
+                <option value="BSc">B.Sc.</option>
+                <option value="BA">B.A.</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="year">Current Year of Study</label>
+            <select id="year" name="year" required>
+                <option value="">Select your year</option>
+                <option value="1">First Year</option>
+                <option value="2">Second Year</option>
+                <option value="3">Third Year</option>
+                <option value="4">Fourth Year</option>
+            </select>
+
+            <label for="income">Annual Family Income (₹)</label>
+            <input type="number" id="income"
+                   name="family_income" min="0" required
+                   placeholder="Enter annual family income">
+
+            <label for="scholarship-type">Scholarship Category</label>
+            <select id="scholarship-type"
+                    name="scholarship_type" required>
+                <option value="">Choose a category</option>
+                <option value="merit">Merit-Based</option>
+                <option value="need">Need-Based</option>
+                <option value="higher-education">Higher Education</option>
+            </select>
+
+            <label for="reason">Why do you need this scholarship?</label>
+            <textarea id="reason" name="reason" rows="4"
+                      placeholder="Briefly explain your requirements"></textarea>
+
+            <button type="submit" class="btn submit-btn">
+                Submit Application
+            </button>
+
+            <p class="form-note">
+                Demonstration only: this form does not store or
+                transmit applications to a scholarship provider.
+            </p>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>Need help understanding scholarship opportunities?</p>
+        <p>Email: support@scholarease.example</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 ScholarEase. Student Scholarship Portal.</p>
+    </footer>
+
+</body>
+</html>
